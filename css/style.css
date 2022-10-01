@@ -1,0 +1,102 @@
+.Background {
+    width: 100%;
+    height: 704px;
+    position: relative;
+    z-index: 1;
+}
+.Fish {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    right: 70px;
+    animation-name: fish;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fish {
+    0% {
+        left:  1500px;
+    }
+    25% {
+        left: 300px
+    }
+    45% {
+        left: 100px;
+    }
+    75% {
+        top: 200px;
+    }
+}
+.Fish1 {
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 450px;
+    left: 150px;
+    animation-name: fish1;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes fish1 {
+    0% {
+        left: 100px;
+    }
+    100% {
+        left: 1500px;
+    }
+}
+.Sun {
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 100px;
+    animation-name: sun;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sun {
+0% {
+    transform: rotate(45deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+100% {
+    transform: rotate(270deg);
+}
+0% {
+    top: 10px;
+}
+100% {
+    top: 60px;
+}
+}
+.Clouds {
+    height: 200px;
+    width: 250px;
+    top: 20px;
+    left: 150px;
+    position: absolute;
+    z-index: 3;
+    animation-name: cloud;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+@keyframes cloud {
+    0% {
+        left: 150px;
+    }
+    100% {
+        left: 15px;
+    }
